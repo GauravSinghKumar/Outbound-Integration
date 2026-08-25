@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Allow delete for records in x_193296_outboud_0_configuration, for users with role x_193296_outboud_0.admin.</description>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_193296_outboud_0_configuration</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 15:49:26</sys_created_on>
+        <sys_id>384fae2bc37a8310606f3f0d05013199</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_193296_outboud_0_configuration</sys_name>
+        <sys_package display_value="Outboud Framework" source="x_193296_outboud_0">b0ceeae7c37a8310606f3f0d05013131</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Outboud Framework">b0ceeae7c37a8310606f3f0d05013131</sys_scope>
+        <sys_update_name>sys_security_acl_384fae2bc37a8310606f3f0d05013199</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 15:49:26</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

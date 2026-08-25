@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="be3fea2bc37a8310606f3f0d0501312e" label="Configuration" max_length="40" name="x_193296_outboud_0_configuration" type="collection">
+        <element label="Transform2" max_length="40" name="transform2" type="string"/>
+        <element label="Transform3" max_length="40" name="transform3" type="string"/>
+        <element label="Alert Creation" max_length="40" name="alert_creation" type="string"/>
+        <element label="queueASync" max_length="40" name="queueasync" type="string"/>
+        <element label="Rest Method" max_length="32" name="rest_method" reference="sys_rest_message_fn" type="reference"/>
+        <element label="OnAfter" max_length="40" name="onafter" type="string"/>
+        <element label="Business Service" max_length="40" name="business_service" type="string"/>
+        <element label="Application" max_length="32" name="application" reference="sys_app" type="reference"/>
+        <element label="Rest Message" max_length="32" name="rest_message" reference="sys_rest_message" type="reference"/>
+        <element label="Notification" max_length="40" name="notification" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Transform1" max_length="40" name="transform1" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="OnBefore" max_length="40" name="onbefore" type="string"/>
+        <element label="Response Body Format" max_length="40" name="response_body_format" type="string"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <index name="index">
+            <element name="application"/>
+        </index>
+        <index name="index2">
+            <element name="rest_message"/>
+        </index>
+        <index name="index3">
+            <element name="rest_method"/>
+        </index>
+    </element>
+</database>

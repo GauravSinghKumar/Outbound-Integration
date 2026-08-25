@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 15:49:25</sys_created_on>
+        <sys_id>644fae2bc37a8310606f3f0d05013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_193296_outboud_0_configuration.x_193296_outboud_0.user</sys_name>
+        <sys_package display_value="Outboud Framework" source="x_193296_outboud_0">b0ceeae7c37a8310606f3f0d05013131</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Outboud Framework">b0ceeae7c37a8310606f3f0d05013131</sys_scope>
+        <sys_security_acl display_value="x_193296_outboud_0_configuration">544f6e2bc37a8310606f3f0d050131d8</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_644fae2bc37a8310606f3f0d05013106</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 15:49:25</sys_updated_on>
+        <sys_user_role display_value="x_193296_outboud_0.user" name="x_193296_outboud_0.user">38ceeae7c37a8310606f3f0d05013175</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
