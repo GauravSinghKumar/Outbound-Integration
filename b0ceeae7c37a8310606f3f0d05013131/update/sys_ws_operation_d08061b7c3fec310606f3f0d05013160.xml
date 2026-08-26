@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>CreateAsset</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var body = request.body.data;
+
+if (body.action == "create") {
+
+    var asset = new GlideRecord('alm_asset');
+    asset.initialize();
+
+    asset.display_name = body.display_name;
+    asset.asset_tag = body.asset_tag;
+    asset.serial_number = body.serial_number;
+    asset.setValue('model_category' , body.model_category);
+	asset.setValue('model', body.model);
+    asset.install_status = body.install_status;
+    asset.substatus = body.substatus;
+    asset.assigned_to = body.assigned_to;
+    asset.company = body.company;
+    asset.location = body.location;
+    asset.cost = body.cost;
+    asset.purchase_date = body.purchase_date;
+
+    var sysId = asset.insert();
+
+}
+
+
+    response.setStatus(201);
+    response.setBody({
+        status: "success",
+        message: "Asset created successfully",
+        sys_id: sysId,
+        
+    });
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_193296_outboud_0/createasset/Create/alm_asset</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/Create/alm_asset</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 04:45:55</sys_created_on>
+        <sys_id>d08061b7c3fec310606f3f0d05013160</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>CreateAsset</sys_name>
+        <sys_package display_value="Outboud Framework" source="x_193296_outboud_0">b0ceeae7c37a8310606f3f0d05013131</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Outboud Framework">b0ceeae7c37a8310606f3f0d05013131</sys_scope>
+        <sys_update_name>sys_ws_operation_d08061b7c3fec310606f3f0d05013160</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 05:21:22</sys_updated_on>
+        <web_service_definition display_value="Svc Management">ab202577c3fec310606f3f0d050131e8</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
