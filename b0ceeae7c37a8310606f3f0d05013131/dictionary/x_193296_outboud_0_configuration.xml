@@ -11,7 +11,14 @@
         <element label="Rest Message" max_length="32" name="rest_message" reference="sys_rest_message" type="reference"/>
         <element label="Notification" max_length="40" name="notification" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Integration Type" max_length="40" name="integration_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Inbound Integration" sequence="0" value="inbound_integration"/>
+                <element inactive_on_update="false" label="Outbound Integration" sequence="1" value="outbound_integration"/>
+            </choice>
+        </element>
         <element label="Transform1" max_length="40" name="transform1" type="string"/>
+        <element label="Log Generate" max_length="40" name="integration_typ0" type="boolean"/>
         <element label="Name" max_length="40" name="name" type="string"/>
         <element label="OnBefore" max_length="40" name="onbefore" type="string"/>
         <element label="Response Body Format" max_length="40" name="response_body_format" type="string"/>
